@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "channel",
+      "text",
+      "label",
+      "difficulty",
+      "rationale",
+      "hints",
+      "risks",
+      "metadata"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "channel": {
+        "type": "string",
+        "enum": [
+          "sms",
+          "email",
+          "whatsapp",
+          "push",
+          "ligacao"
+        ]
+      },
+      "text": {
+        "type": "string",
+        "minLength": 5
+      },
+      "label": {
+        "type": "string",
+        "enum": [
+          "real",
+          "golpe"
+        ]
+      },
+      "difficulty": {
+        "type": "string",
+        "enum": [
+          "facil",
+          "medio",
+          "dificil"
+        ]
+      },
+      "rationale": {
+        "type": "string",
+        "minLength": 3
+      },
+      "hints": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "risks": {
+        "type": "string",
+        "enum": [
+          "baixo",
+          "medio",
+          "alto"
+        ]
+      },
+      "metadata": {
+        "type": "object",
+        "properties": {
+          "bank": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "additionalProperties": false
+  }
+}

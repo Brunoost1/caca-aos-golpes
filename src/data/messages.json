@@ -1,0 +1,112 @@
+[
+  {
+    "id": "msg_001",
+    "channel": "sms",
+    "sender": "Banco BRX",
+    "text": "Banco BRX: detectamos tentativa de acesso. Evite o bloqueio clicando AGORA em http://brx-seguro-clientes.com.",
+    "isFraud": true,
+    "difficulty": "medium",
+    "tags": [
+      "urgency",
+      "fake_url"
+    ],
+    "tips": [
+      "O domínio não é o site oficial do banco.",
+      "Golpes costumam usar urgência para você não pensar muito."
+    ],
+    "highlights": [
+      {
+        "start": 75,
+        "end": 104,
+        "reason": "URL suspeita"
+      },
+      {
+        "start": 53,
+        "end": 70,
+        "reason": "Urgência artificial"
+      }
+    ]
+  },
+  {
+    "id": "msg_002",
+    "channel": "whatsapp",
+    "sender": "Atendimento Nubank",
+    "text": "Olá, tudo bem? Identificamos uma compra suspeita e bloqueamos automaticamente o cartão final 1234. Confira o app para revisar.",
+    "isFraud": false,
+    "difficulty": "easy",
+    "tags": [],
+    "tips": [
+      "O banco pede para você conferir pelo app oficial, sem links externos."
+    ],
+    "highlights": []
+  },
+  {
+    "id": "msg_003",
+    "channel": "email",
+    "sender": "Campanha Pix Premiado",
+    "text": "Parabéns! Seu CPF foi sorteado e você acaba de ganhar R$ 5.000 via PIX. Envie agora seus dados completos para liberar o prêmio.",
+    "isFraud": true,
+    "difficulty": "medium",
+    "tags": [
+      "reward",
+      "data_request"
+    ],
+    "tips": [
+      "Promessas de prêmios altos em troca de dados são clássicas em golpes.",
+      "Sorteios sérios não pedem todos os dados por e-mail sem verificação."
+    ],
+    "highlights": [
+      {
+        "start": 0,
+        "end": 9,
+        "reason": "Euforia / prêmio"
+      },
+      {
+        "start": 104,
+        "end": 133,
+        "reason": "Pedido de dados sensíveis"
+      }
+    ]
+  },
+  {
+    "id": "msg_004",
+    "channel": "whatsapp",
+    "sender": "Suporte Cartão BRX",
+    "text": "Suporte BRX: enviaremos um código para confirmar sua identidade. Nunca compartilhe esse código com ninguém, nem mesmo com o banco.",
+    "isFraud": false,
+    "difficulty": "easy",
+    "tags": [],
+    "tips": [
+      "Bancos legítimos reforçam que códigos nunca devem ser compartilhados."
+    ],
+    "highlights": []
+  },
+  {
+    "id": "msg_005",
+    "channel": "sms",
+    "sender": "BRX Cobrança",
+    "text": "BRX: sua fatura está atrasada. Para evitar negativação, pague AGORA o boleto em http://brx-boleto-pagamento.net.",
+    "isFraud": true,
+    "difficulty": "hard",
+    "tags": [
+      "urgency",
+      "fake_url"
+    ],
+    "tips": [
+      "Golpistas usam medo de negativação para pressionar.",
+      "Sempre confira boletos dentro do app ou site oficial do banco."
+    ],
+    "highlights": [
+      {
+        "start": 76,
+        "end": 110,
+        "reason": "Domínio estranho para cobrança"
+      },
+      {
+        "start": 62,
+        "end": 67,
+        "reason": "Pressão temporal"
+      }
+    ]
+  }
+]

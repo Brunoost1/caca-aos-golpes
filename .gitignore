@@ -1,0 +1,32 @@
+# Dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build / output
+dist/
+build/
+coverage/
+.cache/
+.next/
+out/
+.tmp/
+temp/
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.iml
+
+# SO / diversos
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log

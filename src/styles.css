@@ -1,0 +1,87 @@
+/* ===== Acessibilidade e movimento reduzido ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== Layout ainda melhor em telas bem pequenas ===== */
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  #app {
+    margin: 0;
+    padding: 16px 12px;
+    border-radius: 0;
+  }
+
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .app-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 0.7rem;
+  }
+
+  .phone-shell {
+    width: 100%;
+  }
+
+  .phone-main-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-tools {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* ===== Fundo futurista com grid sutil e orbes de luz ===== */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::before {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(56, 189, 248, 0.18), transparent 60%),
+    radial-gradient(circle at 90% 100%, rgba(248, 113, 113, 0.16), transparent 65%);
+  opacity: 0.9;
+}
+
+body::after {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.4) 0px,
+    rgba(15, 23, 42, 0.4) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+  mix-blend-mode: soft-light;
+  opacity: 0.45;
+}
+
+/* ===== Foco visível e bonito para teclado ===== */
+.btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

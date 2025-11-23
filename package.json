@@ -1,0 +1,25 @@
+{
+  "name": "caca-aos-golpes",
+  "version": "1.0.0",
+  "description": "Jogo Educativo \u2014 Ca\u00e7a aos Golpes Digitais (pt-BR, i18n-ready en-US).",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.5",
+    "jsdom": "^24.0.0"
+  }
+}

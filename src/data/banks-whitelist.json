@@ -1,0 +1,20 @@
+{
+  "official_domains": [
+    "*.itau.com.br",
+    "*.bradesco.com.br",
+    "bb.com.br",
+    "*.santander.com.br",
+    "caixa.gov.br",
+    "nubank.com.br",
+    "inter.co",
+    "sicredi.com.br",
+    "sicoob.com.br"
+  ],
+  "short_codes_examples": [
+    "29000",
+    "29550",
+    "28128",
+    "24242"
+  ],
+  "notes": "Exemplos ilustrativos de domínios/canais oficiais para fins educativos."
+}
