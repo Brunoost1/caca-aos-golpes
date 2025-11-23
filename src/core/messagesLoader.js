@@ -1,7 +1,15 @@
+// src/core/messagesLoader.js
 import { setDeck } from "./gameState.js";
-import messages from "../data/messages.json" assert { type: "json" };
 
 export async function loadMessages() {
-  // aqui poderíamos futuramente buscar API; por enquanto, usa JSON local
+  // Carrega o JSON como arquivo estático no navegador
+  const res = await fetch("/src/data/messages.json");
+
+  if (!res.ok) {
+    console.error("Falha ao carregar messages.json", res.status);
+    return;
+  }
+
+  const messages = await res.json();
   setDeck(messages);
 }
